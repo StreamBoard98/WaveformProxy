@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <title>FEC Demo</title>
+  </head>
+  <body>
+    <div id='container'>
+      <div id='top'>
+         <div id="musicPlayer"></div>
+         <div id="albumModal"></div>
+         <div id='waveform'></div>
+       </div>
+       <div id='bottom'>
+         <div id='artistInfo'></div>
+         <div id='comments'></div>
+         <div id='suggestedTracks'></div>
+       </div>
+     </div>  
+    <script src="/lib/react.development.js"></script>
+    <script src="/lib/react-dom.development.js"></script>
+    <!-- suggestedtracks -->
+    <script src="http://localhost:4001/bundle.js"></script>
+    <!-- songPlayer -->
+    <script src="http://localhost:6969/bundle.js"></script>
+    <!-- waveform -->
+    <script src="http://localhost:3000/waveForm.js"></script>
+    <!-- comments -->
+    <script src="http://localhost:1458/bundle.js"></script>
+    <!-- <script src="http://localhost:3004/app.js"></script> -->
+    <!-- <script type="text/javascript" src="/bundle.js"></script> -->
+    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
+    <script>
+      // ReactDOM.render(
+      //   React.createElement(Info),
+      //   document.getElementById('Info')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(CountDown),
+      //   document.getElementById('CountDown')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Related),
+      //   document.getElementById('Related')
+      // );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('Reviews')
+      // );
+    </script>
+  </body>
+</html>

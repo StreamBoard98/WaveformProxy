@@ -1,0 +1,41 @@
+body{
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+#top {
+	position: relative;
+	width: 1200px;
+	margin: auto;
+	border-color: red;
+	border-width: 10px;
+}
+
+#waveform {
+  display: flex;
+  position: absolute;
+  right: 350px;
+  left: 30px;
+  bottom: 30px;
+}
+
+#bottom {
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	justify-content: center;
+}
+
+#suggestedTracks {
+  height: 1000px; 
+  width: 400px; 
+}
+
+#comments {
+  height: 1000px;
+  width: 680px; 
+}

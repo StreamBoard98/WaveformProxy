@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 2332;
 
 app.use(morgan('dev'));
 app.use('/songs/:id', express.static(path.join(__dirname, 'public')))
