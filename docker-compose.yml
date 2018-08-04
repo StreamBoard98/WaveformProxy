@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  waveformproxy:
+    image: waveformproxy
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 2332:2332

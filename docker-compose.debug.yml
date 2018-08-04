@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+  waveformproxy:
+    image: waveformproxy
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 2332:2332
+      - 9229:9229
+    ## set your startup file here
+    command: node --inspect index.js

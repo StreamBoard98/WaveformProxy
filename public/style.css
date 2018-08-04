@@ -1,18 +1,27 @@
-body{
-  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-#container {
-	display: flex;
-	flex-direction: column;
+#artistInfo img {
+  width: auto;
+  height: auto;
+}
+.container {
+  display: flex; 
+  flex-direction: column; 
 }
 
-#top {
-	position: relative;
-	width: 1200px;
-	margin: auto;
-	border-color: red;
-	border-width: 10px;
+#musicPlayer {
+  height: 370px;
+  width: 1240px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+#artistInfo {
+  height: 250px;
+  width: 140px;
+  border: 1px solid yellowgreen;
 }
 
 #waveform {
@@ -23,19 +32,44 @@ body{
   bottom: 30px;
 }
 
-#bottom {
-	display: flex;
-	flex-direction: row;
-	width: 1200px;
-	justify-content: center;
+.top {
+  width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.bottom {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
 }
 
 #suggestedTracks {
   height: 1000px; 
-  width: 400px; 
+  width: 350px; 
+  border-left: 1px solid #ccc;
+
 }
 
 #comments {
-  height: 1000px;
+  margin: 30px;
+  min-height: auto;
   width: 680px; 
+  border-right: 1px solid #ccc;
+}
+
+#comments p {
+  font-size: 16px;
+  color: #999;
+  padding: 0px 0px 15px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#comments a {
+  color: #999;
+  text-decoration: none;
+}
+
+#comments a:hover {
+  color: black; 
 }
